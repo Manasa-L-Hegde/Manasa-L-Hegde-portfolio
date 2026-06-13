@@ -201,7 +201,7 @@ Or simply visit the **[Live Site →](https://manasa-l-hegde.github.io/Manasa-L-
 
 <br/>
 
-**Designed & Built with 💜 by Manasa L Hegde · 2026**
+**Designed & Built with 💜 by Manasa L Hegde**
 
 <br/>
 
