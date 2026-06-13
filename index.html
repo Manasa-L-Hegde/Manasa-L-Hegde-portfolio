@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manasa L Hegde | Data & ML Portfolio</title>
+  <meta name="description" content="Portfolio of Manasa L Hegde — Final-year ISE student, Data Analytics & ML enthusiast building real-world solutions with Python, Power BI, SQL & AI."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particles"></canvas>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">Manasa L Hegde</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+    <li><a href="#hackathons" onclick="closeMobile()">Hackathons</a></li>
+    <li><a href="#certifications" onclick="closeMobile()">Certifications</a></li>
+    <li><a href="#about" onclick="closeMobile()">About</a></li>
+    <li><a href="#resume" onclick="closeMobile()">Resume</a></li>
+    <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+  <div class="hero-container container">
+    <div class="hero-content">
+      <div class="hero-eyebrow"><span class="pulse-dot"></span> Open to Opportunities</div>
+      <h1>Hi, I'm <span class="gradient-text">Manasa</span><br/><span class="typewriter" id="typewriter"></span></h1>
+      <p class="hero-bio">Final-year ISE student at DBIT Bengaluru · Data Analytics &amp; ML enthusiast · Building real-world solutions with MySQL, Excel, Power BI, Python, Streamlit &amp; AI</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary"><span>View My Work</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="Manasa_L_Hegde_Resume.pdf" download class="btn-outline">📄 Resume <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg></a>
+        <a href="https://www.linkedin.com/in/manasa-l-hegde/" target="_blank" class="btn-outline">LinkedIn <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num" data-count="10">0</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-item"><div class="stat-num stat-decimal" data-count="9.15">0</div><div class="stat-label">CGPA</div></div>
+        <div class="stat-item"><div class="stat-num" data-count="25">0</div><div class="stat-label">Google Skill K Pts</div></div>
+        <div class="stat-item"><div class="stat-num" data-count="3">0</div><div class="stat-label">Hackathons</div></div>
+      </div>
+    </div>
+    <div class="hero-image-wrap reveal" style="--delay:0.2s">
+      <div class="hero-image-glow"></div>
+      <div class="hero-image-border">
+        <img src="profile.jpg" alt="Manasa L Hegde" class="hero-image"/>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section-dark">
+  <div class="container">
+    <p class="section-eyebrow reveal">What I Work With</p>
+    <h2 class="section-title reveal">My <span class="gradient-text">Tech Stack</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal" style="--delay:0.05s">
+        <div class="skill-icon-wrap"><span>🐍</span></div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Pandas, NumPy, Scikit-learn, Streamlit, Plotly</div>
+      </div>
+      <div class="skill-card reveal" style="--delay:0.1s">
+        <div class="skill-icon-wrap"><span>🗄️</span></div>
+        <div class="skill-name">SQL / MySQL</div>
+        <div class="skill-desc">Window functions, CTEs, Stored Procedures, Query Optimization</div>
+      </div>
+      <div class="skill-card reveal" style="--delay:0.15s">
+        <div class="skill-icon-wrap"><span>📊</span></div>
+        <div class="skill-name">Power BI & Excel</div>
+        <div class="skill-desc">DAX, Pivot Tables, Interactive Dashboards, Data Storytelling</div>
+      </div>
+      <div class="skill-card reveal" style="--delay:0.2s">
+        <div class="skill-icon-wrap"><span>🤖</span></div>
+        <div class="skill-name">Machine Learning</div>
+        <div class="skill-desc">Classification, TF-IDF, Naive Bayes, Scikit-learn pipelines</div>
+      </div>
+      <div class="skill-card reveal" style="--delay:0.25s">
+        <div class="skill-icon-wrap"><span>☁️</span></div>
+        <div class="skill-name">Cloud & AI</div>
+        <div class="skill-desc">Google Cloud, AWS, Vertex AI, Groq, Gen AI APIs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <p class="section-eyebrow reveal">Things I've Built</p>
+    <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card reveal" style="--delay:0.05s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-py">Python</span><span class="tag tag-da">Data &amp; AI</span></div>
+        <div class="project-title">🌱 Carbon Footprint Platform</div>
+        <p class="project-desc">AI-powered platform that calculates carbon emissions, generates carbon scores, and provides personalized sustainability recommendations. Built for Hack2Skill Challenge.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">React</span><span class="stack-pill">Vite</span><span class="stack-pill">Tailwind</span><span class="stack-pill">Chart.js</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Manasa-L-Hegde/AI-powered-Carbon-Footprint-Awareness-Platform.git" target="_blank" class="project-link">GitHub</a>
+            <a href="https://ecotrace-ai.vercel.app/" target="_blank" class="project-link">Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card reveal" style="--delay:0.1s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-ml">ML</span><span class="tag tag-py">Python</span></div>
+        <div class="project-title">💬 ReviewSense</div>
+        <p class="project-desc">ML project that classifies restaurant reviews as positive or negative using TF-IDF vectorization and Multinomial Naive Bayes. Includes full data preprocessing and evaluation pipeline.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">Python</span><span class="stack-pill">TF-IDF</span><span class="stack-pill">Naive Bayes</span></div>
+          <a href="https://github.com/Manasa-L-Hegde/ReviewSense.git" target="_blank" class="project-link">GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card reveal" style="--delay:0.15s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-py">Python</span><span class="tag tag-da">AI</span></div>
+        <div class="project-title">⚙️ DevFlow AI</div>
+        <p class="project-desc">AI-powered developer productivity assistant — generates SQL from natural language, debugs Python code, creates README files, and visualizes data. IBM Bob Hackathon submission.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">Streamlit</span><span class="stack-pill">Groq AI</span><span class="stack-pill">Plotly</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Manasa-L-Hegde/DevFlow-AI.git" target="_blank" class="project-link">GitHub</a>
+            <a href="https://devflow-ai-se86qe7zzchyre8pvvgepd.streamlit.app/" target="_blank" class="project-link">Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card reveal" style="--delay:0.05s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-py">Python</span><span class="tag tag-da">Data</span></div>
+        <div class="project-title">🏙️ Urban Heat Island Mapping</div>
+        <p class="project-desc">Data-driven platform mapping urban heat islands at ward level for Bengaluru using satellite imagery and weather data. Creates interactive risk maps with personalized alerts.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">Pandas</span><span class="stack-pill">Scikit-learn</span><span class="stack-pill">Folium</span><span class="stack-pill">Streamlit</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Manasa-L-Hegde/Urban_Heat_Island.git" target="_blank" class="project-link">GitHub</a>
+            <a href="https://manasa-l-hegde-urban-heat-island-appapp-ijwlht.streamlit.app/" target="_blank" class="project-link">Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project-card reveal" style="--delay:0.1s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-py">Python</span><span class="tag tag-da">AI</span></div>
+        <div class="project-title">📚 AI Study Assistant</div>
+        <p class="project-desc">Responsive Streamlit app that turns any topic into simple explanations, short notes, and quiz questions using AI. Features a dark modern UI that works on both mobile and desktop.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">Python</span><span class="stack-pill">Streamlit</span><span class="stack-pill">Gen AI</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Manasa-L-Hegde/AI-Study-Assistant.git" target="_blank" class="project-link">GitHub</a>
+            <a href="https://manasa-l-hegde-ai-study-assistant-main-upgraded-v2-tsxxib.streamlit.app/" target="_blank" class="project-link">Demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project-card reveal" style="--delay:0.15s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-py">Python</span><span class="tag tag-da">AI</span></div>
+        <div class="project-title">🎫 Support Triage Agent</div>
+        <p class="project-desc">Deterministic support triage system with request classification, product area detection, risk-based escalation, and retrieval-based response generation using a modular agent architecture.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">Python</span><span class="stack-pill">NLP</span><span class="stack-pill">Agents</span></div>
+          <a href="https://github.com/Manasa-L-Hegde/Support_Triage_Agent" target="_blank" class="project-link">GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Project 7 -->
+      <div class="project-card reveal" style="--delay:0.05s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-da">Excel</span><span class="tag tag-da">Data</span></div>
+        <div class="project-title">🏏 IPL Data Analysis Dashboard</div>
+        <p class="project-desc">Interactive IPL dashboard built in Excel featuring pivot tables, charts, and slicers to analyze team performance, match trends, and key insights from 2008 to 2022.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">Excel</span><span class="stack-pill">Pivot Tables</span><span class="stack-pill">Charts</span></div>
+          <a href="https://github.com/Manasa-L-Hegde/IPL-Data-Analysis-Dashboard-Excel" target="_blank" class="project-link">GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="project-card reveal" style="--delay:0.1s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-js">JavaScript</span><span class="tag tag-web">Web</span></div>
+        <div class="project-title">🎮 Simon Says Game</div>
+        <p class="project-desc">Fun memory-based game where players repeat flashing color sequences to advance levels. Showcases DOM manipulation, event handling, and game logic with clean UI.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">HTML</span><span class="stack-pill">CSS</span><span class="stack-pill">JavaScript</span></div>
+          <a href="https://github.com/Manasa-L-Hegde/Simon-Says-Game" target="_blank" class="project-link">GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Project 9 -->
+      <div class="project-card reveal" style="--delay:0.15s">
+        <div class="project-glow"></div>
+        <div class="project-tags"><span class="tag tag-js">JavaScript</span><span class="tag tag-web">Web</span></div>
+        <div class="project-title">🎵 Spotify Clone</div>
+        <p class="project-desc">Pixel-perfect Spotify UI clone showcasing advanced HTML &amp; CSS skills — layout, flexbox/grid, and responsive design principles applied to a real-world app interface.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span class="stack-pill">HTML</span><span class="stack-pill">CSS</span></div>
+          <a href="https://github.com/Manasa-L-Hegde/spotify-clone" target="_blank" class="project-link">GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HACKATHONS -->
+<section id="hackathons">
+  <div class="container">
+    <p class="section-eyebrow reveal">Compete & Build</p>
+    <h2 class="section-title reveal">Hackathon <span class="gradient-text">Achievements</span></h2>
+    <div class="hackathons-grid">
+      <!-- Hackathon 1 -->
+      <div class="hackathon-card reveal" style="--delay:0.05s">
+        <div class="hackathon-rank-badge">
+          <span class="rank-number">95<sup>th</sup></span>
+          <span class="rank-label">Rank</span>
+        </div>
+        <div class="hackathon-content">
+          <div class="hackathon-meta">
+            <span class="hackathon-date">May 15–17, 2026</span>
+            <span class="hackathon-type">48-Hour Hackathon</span>
+          </div>
+          <div class="hackathon-title">IBM BoB Hackathon 2026</div>
+          <div class="hackathon-organizer">Organized by LabLab &amp; NativelyAI</div>
+          <p class="hackathon-desc">Ranked <strong class="text-lavender">95th</strong> among <strong>5,628 participants</strong> and <strong>1,674 teams</strong>. Built <strong class="text-mint">DevFlow AI</strong> — an AI-powered natural language-to-SQL analytics assistant with code debugging, README generation, and data visualization capabilities.</p>
+          <div class="hackathon-stats-row">
+            <div class="hackathon-stat"><span class="hs-num">5,628</span><span class="hs-label">Participants</span></div>
+            <div class="hackathon-stat"><span class="hs-num">1,674</span><span class="hs-label">Teams</span></div>
+            <div class="hackathon-stat"><span class="hs-num">Top 6%</span><span class="hs-label">Percentile</span></div>
+          </div>
+          <div class="hackathon-stack">
+            <span class="stack-pill">Streamlit</span>
+            <span class="stack-pill">Groq AI</span>
+            <span class="stack-pill">Plotly</span>
+            <span class="stack-pill">SQL</span>
+          </div>
+        </div>
+      </div>
+      <!-- Hackathon 2 -->
+      <div class="hackathon-card reveal" style="--delay:0.15s">
+        <div class="hackathon-rank-badge">
+          <span class="rank-number">843<sup>rd</sup></span>
+          <span class="rank-label">Place</span>
+        </div>
+        <div class="hackathon-content">
+          <div class="hackathon-meta">
+            <span class="hackathon-date">May 2026</span>
+            <span class="hackathon-type">24-Hour Hackathon</span>
+          </div>
+          <div class="hackathon-title">HackerRank Orchestrate 2026</div>
+          <div class="hackathon-organizer">HackerRank</div>
+          <p class="hackathon-desc">Competed in HackerRank Orchestrate — a 24-hour AI Agent hackathon with <strong>12,885 participants</strong>. Ranked <strong class="text-lavender">843rd</strong>, shipped a working AI agent, and defended it in a judge interview. Best first online hackathon! 🚀</p>
+          <div class="hackathon-stats-row">
+            <div class="hackathon-stat"><span class="hs-num">12,885</span><span class="hs-label">Participants</span></div>
+            <div class="hackathon-stat"><span class="hs-num">843rd</span><span class="hs-label">Rank</span></div>
+          </div>
+          <div class="hackathon-stack">
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">AI Agents</span>
+            <span class="stack-pill">NLP</span>
+          </div>
+        </div>
+      </div>
+      <!-- Hackathon 3 -->
+      <div class="hackathon-card reveal" style="--delay:0.25s">
+        <div class="hackathon-rank-badge hackathon-rank-participated">
+          <span class="rank-icon">🏆</span>
+          <span class="rank-label">Participated</span>
+        </div>
+        <div class="hackathon-content">
+          <div class="hackathon-meta">
+            <span class="hackathon-date">Apr 29–30, 2026</span>
+            <span class="hackathon-type">24-Hour Hackathon</span>
+          </div>
+          <div class="hackathon-title">CodeCarnage 2.0</div>
+          <div class="hackathon-organizer">SJB Institute of Technology · IEEE &amp; Dept. of CSE(DS)</div>
+          <p class="hackathon-desc">Participated in a 24-hour hackathon organized by the Department of Computer Science &amp; Engineering (Data Science) at SJBIT Bengaluru, co-hosted with AIEpoch Technologies, MindZi, and IEEE.</p>
+          <div class="hackathon-stack">
+            <span class="stack-pill">Data Science</span>
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section-dark">
+  <div class="container">
+    <p class="section-eyebrow reveal">Credentials</p>
+    <h2 class="section-title reveal">Certifications & <span class="gradient-text">Achievements</span></h2>
+    <div class="cert-grid">
+      <!-- 1 -->
+      <div class="cert-card reveal" style="--delay:0.05s">
+        <div class="cert-badge">☁️</div>
+        <div class="cert-content">
+          <div class="cert-name">Google Cloud Data Analytics</div>
+          <div class="cert-issuer">Google Cloud (Credly Verified)</div>
+          <div class="cert-desc">Completed · Cloud data processing, cleaning, SQL &amp; BI modeling</div>
+        </div>
+        <a href="https://www.credly.com/badges/a228f720-2574-4fca-a84f-b8371d371436/public_url" target="_blank" class="cert-link" title="Verify Badge">↗</a>
+      </div>
+      <!-- 2 -->
+      <div class="cert-card reveal" style="--delay:0.1s">
+        <div class="cert-badge">🤖</div>
+        <div class="cert-content">
+          <div class="cert-name">Google Prompting Essentials</div>
+          <div class="cert-issuer">Google (Coursera)</div>
+          <div class="cert-desc">Completed · Structured prompting, AI-powered productivity workflows</div>
+        </div>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/PE15O5AIYXNC?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n" target="_blank" class="cert-link" title="Verify Certificate">↗</a>
+      </div>
+      <!-- 3 -->
+      <div class="cert-card reveal" style="--delay:0.15s">
+        <div class="cert-badge">🧠</div>
+        <div class="cert-content">
+          <div class="cert-name">Google AI Essentials Specialization</div>
+          <div class="cert-issuer">Google (Coursera)</div>
+          <div class="cert-desc">Completed · Practical ML/AI methodologies and strategic applications</div>
+        </div>
+        <a href="https://coursera.org/share/11f516f13b78af324205907e4984b1d8" target="_blank" class="cert-link" title="Verify Certificate">↗</a>
+      </div>
+      <!-- 4 -->
+      <div class="cert-card reveal" style="--delay:0.2s">
+        <div class="cert-badge">✨</div>
+        <div class="cert-content">
+          <div class="cert-name">Gemini Certified University Student</div>
+          <div class="cert-issuer">Google (Accredible Verified)</div>
+          <div class="cert-desc">Certified · Gemini LLM features, application integrations &amp; prompt design</div>
+        </div>
+        <a href="https://edu.google.accredible.com/743b9acf-68a4-4328-8030-c7b7f34dd3b1#acc.ObxhsztM" target="_blank" class="cert-link" title="Verify Certification">↗</a>
+      </div>
+      <!-- 5 -->
+      <div class="cert-card reveal" style="--delay:0.25s">
+        <div class="cert-badge">🎯</div>
+        <div class="cert-content">
+          <div class="cert-name">Prompt Design in Vertex AI</div>
+          <div class="cert-issuer">Google Cloud (Credly Verified)</div>
+          <div class="cert-desc">Skill Badge · Model tuning, parameter settings, and Vertex AI APIs</div>
+        </div>
+        <a href="https://www.credly.com/badges/34c1bd12-85c3-4310-98ef-a00c08f32329/linked_in_profile" target="_blank" class="cert-link" title="Verify Badge">↗</a>
+      </div>
+      <!-- 6 -->
+      <div class="cert-card reveal" style="--delay:0.3s">
+        <div class="cert-badge">📊</div>
+        <div class="cert-content">
+          <div class="cert-name">Introduction to Data Science</div>
+          <div class="cert-issuer">Cisco / Credly</div>
+          <div class="cert-desc">Completed · Foundational concepts of data exploration, statistics &amp; ML</div>
+        </div>
+        <a href="https://www.credly.com/badges/fabd2817-a9b3-4208-a83e-34f12f510b7d/linked_in_profile" target="_blank" class="cert-link" title="Verify Badge">↗</a>
+      </div>
+      <!-- 7 -->
+      <div class="cert-card reveal" style="--delay:0.05s">
+        <div class="cert-badge">🦘</div>
+        <div class="cert-content">
+          <div class="cert-name">Deloitte Australia - Data Analytics</div>
+          <div class="cert-issuer">Deloitte (Forage Simulation)</div>
+          <div class="cert-desc">Completed · Data quality analysis, visualization dashboard creation &amp; insights</div>
+        </div>
+        <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_GdpBKhfq7bjquzxwd_1764398515853_completion_certificate.pdf" target="_blank" class="cert-link" title="View Forage Certificate">↗</a>
+      </div>
+      <!-- 8 -->
+      <div class="cert-card reveal" style="--delay:0.1s">
+        <div class="cert-badge">🏢</div>
+        <div class="cert-content">
+          <div class="cert-name">Tata - GenAI Powered Data Analytics</div>
+          <div class="cert-issuer">Tata (Forage Simulation)</div>
+          <div class="cert-desc">Completed · Interactive BI modeling &amp; AI-driven visualization patterns</div>
+        </div>
+        <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_GdpBKhfq7bjquzxwd_1768388225111_completion_certificate.pdf" target="_blank" class="cert-link" title="View Forage Certificate">↗</a>
+      </div>
+      <!-- 9 -->
+      <div class="cert-card reveal" style="--delay:0.15s">
+        <div class="cert-badge">🏛️</div>
+        <div class="cert-content">
+          <div class="cert-name">AWS - Solutions Architecture</div>
+          <div class="cert-issuer">AWS (Forage Simulation)</div>
+          <div class="cert-desc">Completed · Enterprise system topologies, high availability scaling</div>
+        </div>
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_GdpBKhfq7bjquzxwd_1757597459665_completion_certificate.pdf" target="_blank" class="cert-link" title="View Forage Certificate">↗</a>
+      </div>
+      <!-- 10 -->
+      <div class="cert-card reveal" style="--delay:0.2s">
+        <div class="cert-badge">🗄️</div>
+        <div class="cert-content">
+          <div class="cert-name">SQL (Intermediate) Certificate</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-desc">Verified · Joins, subqueries, CTEs, and procedural functions</div>
+        </div>
+        <a href="https://www.hackerrank.com/certificates/617f85f8bfba" target="_blank" class="cert-link" title="Verify Certificate">↗</a>
+      </div>
+      <!-- 11 -->
+      <div class="cert-card reveal" style="--delay:0.25s">
+        <div class="cert-badge">🗃️</div>
+        <div class="cert-content">
+          <div class="cert-name">SQL (Basic) Certificate</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-desc">Verified · Data querying, basic aggregation, and filtering</div>
+        </div>
+        <a href="https://www.hackerrank.com/certificates/2def53372cae" target="_blank" class="cert-link" title="Verify Certificate">↗</a>
+      </div>
+      <!-- 12 -->
+      <div class="cert-card reveal" style="--delay:0.3s">
+        <div class="cert-badge">⚡</div>
+        <div class="cert-content">
+          <div class="cert-name">AI Fluency for Students</div>
+          <div class="cert-issuer">Skilljar</div>
+          <div class="cert-desc">Completed · Core AI mechanics, deep learning &amp; ethics</div>
+        </div>
+        <a href="https://verify.skilljar.com/c/dqatoxs5ioyz" target="_blank" class="cert-link" title="Verify Certificate">↗</a>
+      </div>
+      <!-- 13 -->
+      <div class="cert-card reveal" style="--delay:0.05s">
+        <div class="cert-badge">📈</div>
+        <div class="cert-content">
+          <div class="cert-name">Google Data Analytics Professional</div>
+          <div class="cert-issuer">Google (Coursera)</div>
+          <div class="cert-desc">Ongoing Specialization · Structured data analytics methodology &amp; R programming</div>
+        </div>
+        <span class="cert-status">Ongoing</span>
+      </div>
+      <!-- 14 -->
+      <div class="cert-card reveal" style="--delay:0.1s">
+        <div class="cert-badge">💎</div>
+        <div class="cert-content">
+          <div class="cert-name">Google Skills Boost — Diamond League</div>
+          <div class="cert-issuer">Google Cloud Skills Profile</div>
+          <div class="cert-desc">25,000+ points · Badges in Data Analytics, AI Agents, MLOps, Vertex AI, Gen AI</div>
+        </div>
+        <a href="https://www.skills.google/public_profiles/1955f914-009a-45fb-8b50-c80c3f74cdde" target="_blank" class="cert-link" title="View Skills Profile">↗</a>
+      </div>
+      <!-- 15 -->
+      <div class="cert-card reveal" style="--delay:0.15s">
+        <div class="cert-badge">📊</div>
+        <div class="cert-content">
+          <div class="cert-name">Microsoft Power BI Data Analyst Associate (PL-300)</div>
+          <div class="cert-issuer">Microsoft</div>
+          <div class="cert-desc">In Progress · Power BI data modeling, DAX, report building &amp; analytics</div>
+        </div>
+        <span class="cert-status">In Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title reveal">Who <span class="gradient-text">I Am</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm Manasa L Hegde, a passionate engineering student pursuing a Bachelor of Engineering in Information Science &amp; Engineering at Don Bosco Institute of Technology (DBIT), Bengaluru, under VTU. Driven by a CGPA of <strong class="text-lavender">9.15</strong>, I specialize in translating complex datasets into actionable narratives and creating intelligent AI-powered solutions to solve modern business challenges.</p>
+        <p>My technical foundation began with advanced Excel models and SQL pipelines, expanding into statistical analysis, machine learning workflows in Python, and cloud services. I am highly motivated by hackathons and hands-on builds, which challenge me to design rapidly, prototype effectively, and present data-backed insights.</p>
+        <p>Starting July 2026, I will join the <strong class="text-mint">Commonwealth Bank of Australia (CBA)</strong> for a 6-month paid internship as a <strong>Software Development Trainee</strong>—an opportunity to leverage my software development, data analytics, and machine learning skills in a high-impact financial environment.</p>
+      </div>
+      <div class="about-highlights reveal">
+        <div class="highlight-item">
+          <div class="hi-icon">🎓</div>
+          <div><div class="hi-title">Don Bosco Institute of Technology (DBIT), Bengaluru</div><div class="hi-desc">Bachelor of Engineering in ISE (VTU) · CGPA 9.15 · Passing June 2027</div></div>
+        </div>
+        <div class="highlight-item">
+          <div class="hi-icon">🏦</div>
+          <div><div class="hi-title">Software Development Trainee Intern</div><div class="hi-desc">Commonwealth Bank of Australia (CBA) · Paid 6-Month Internship · Starting July 2026</div></div>
+        </div>
+        <div class="highlight-item">
+          <div class="hi-icon">🏆</div>
+          <div style="flex: 1;"><div class="hi-title">Hackathons &amp; Competitions</div><div class="hi-desc">Hack2Skill, IBM Bob, HackerRank Orchestrate, Code Carnage 2.0</div></div>
+          <a href="https://www.linkedin.com/in/manasa-l-hegde/" target="_blank" class="cert-link" title="Verify participation on LinkedIn" style="width: 28px; height: 28px; font-size: 0.8rem; border-radius: 6px; align-self: center;">↗</a>
+        </div>
+        <div class="highlight-item">
+          <div class="hi-icon">🎯</div>
+          <div><div class="hi-title">Currently Targeting</div><div class="hi-desc">Data Analyst &amp; ML Engineer roles · Placement season late 2026</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section-dark">
+  <div class="container">
+    <p class="section-eyebrow reveal">My Background</p>
+    <h2 class="section-title reveal">Resume <span class="gradient-text">Overview</span></h2>
+    <div class="resume-wrapper">
+      <!-- Resume Header -->
+      <div class="resume-header reveal">
+        <div class="resume-header-info">
+          <h3 class="resume-name">Manasa L Hegde</h3>
+          <p class="resume-summary">Final-year Information Science &amp; Engineering student at DBIT Bengaluru (CGPA: 9.15) with hands-on experience in Data Analytics, Machine Learning, and Generative AI. Built AI-powered projects using Python, SQL, Streamlit, and Power BI. Selected for the Commonwealth Bank of Australia Software Development Trainee Apprenticeship 2026.</p>
+        </div>
+        <a href="Manasa_L_Hegde_Resume.pdf" download class="btn-primary resume-download-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Download PDF</span>
+        </a>
+      </div>
+
+      <div class="resume-grid">
+        <!-- Education Column -->
+        <div class="resume-column reveal" style="--delay:0.05s">
+          <div class="resume-section-label"><span class="resume-label-icon">🎓</span> Education</div>
+          <div class="resume-timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-period">2023 — 2027 (Ongoing)</div>
+                <div class="timeline-title">B.E. in Information Science &amp; Engineering</div>
+                <div class="timeline-org">DBIT, Bengaluru (VTU)</div>
+                <div class="timeline-detail"><span class="text-lavender">CGPA: 9.15</span></div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-period">Graduated 2023</div>
+                <div class="timeline-title">Class XII — PUC</div>
+                <div class="timeline-org">KCS Dr. A. V. Baliga Arts &amp; Science College, Uttara Kannada</div>
+                <div class="timeline-detail"><span class="text-lavender">91.3%</span></div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-period">Graduated 2021</div>
+                <div class="timeline-title">Class X — SSLC</div>
+                <div class="timeline-org">B.G.S Central School, Uttara Kannada</div>
+                <div class="timeline-detail"><span class="text-lavender">92%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Column -->
+        <div class="resume-column reveal" style="--delay:0.15s">
+          <div class="resume-section-label"><span class="resume-label-icon">🏆</span> Key Achievements</div>
+          <div class="resume-achievements">
+            <div class="achievement-item">
+              <span class="achievement-bullet"></span>
+              <p>Selected for <strong class="text-mint">Commonwealth Bank of Australia (CBA)</strong> Software Development Trainee Apprenticeship — 2026</p>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-bullet"></span>
+              <p>Achieved <strong class="text-lavender">Diamond League</strong> in Google Cloud Skills Boost across Data Analytics, AI Agents, MLOps, Vertex AI, and Generative AI — 2026</p>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-bullet"></span>
+              <p>Achieved <strong class="text-lavender">Top 6.5%</strong> ranking in HackerRank Orchestrate AI Agent Hackathon — 2026</p>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-bullet"></span>
+              <p>Ranked <strong class="text-lavender">95th</strong> among 5,628 participants (Top 1.7%) in IBM BoB Hackathon 2026, developing <strong class="text-mint">DevFlow AI</strong></p>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-bullet"></span>
+              <p>Participated in <strong>Hack2Skill PromptWars</strong> x Google for Developers</p>
+            </div>
+          </div>
+
+          <div class="resume-section-label" style="margin-top:1.5rem;"><span class="resume-label-icon">💻</span> Technical Skills</div>
+          <div class="resume-skills-list">
+            <div class="resume-skill-row">
+              <span class="resume-skill-cat">Languages</span>
+              <span class="resume-skill-val">Python, SQL, Java</span>
+            </div>
+            <div class="resume-skill-row">
+              <span class="resume-skill-cat">Data &amp; Viz</span>
+              <span class="resume-skill-val">Excel, Power BI, Tableau, Plotly, Streamlit</span>
+            </div>
+            <div class="resume-skill-row">
+              <span class="resume-skill-cat">ML &amp; AI</span>
+              <span class="resume-skill-val">Scikit-learn, Pandas, NumPy, Groq API, LLMs</span>
+            </div>
+            <div class="resume-skill-row">
+              <span class="resume-skill-cat">Cloud</span>
+              <span class="resume-skill-val">Google Cloud, AWS, MySQL</span>
+            </div>
+            <div class="resume-skill-row">
+              <span class="resume-skill-cat">Tools</span>
+              <span class="resume-skill-val">Git, GitHub, Jupyter, VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-dark">
+  <div class="container">
+    <div class="contact-wrapper reveal">
+      <p class="section-eyebrow">Let's Connect</p>
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="contact-subtitle">Open to collaborations and full-time Data Analyst / ML Engineer roles after June 2027. Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:manasalshegde@gmail.com" class="contact-btn" id="contact-email">
+          <span class="contact-icon">📧</span><span>manasalshegde@gmail.com</span>
+        </a>
+        <a href="tel:+918431363152" class="contact-btn" id="contact-phone">
+          <span class="contact-icon">📱</span><span>+91 84313 63152</span>
+        </a>
+        <a href="https://www.linkedin.com/in/manasa-l-hegde/" target="_blank" class="contact-btn" id="contact-linkedin">
+          <span class="contact-icon">💼</span><span>LinkedIn</span>
+        </a>
+        <a href="Manasa_L_Hegde_Resume.pdf" download class="contact-btn" id="contact-resume">
+          <span class="contact-icon">📄</span><span>Download Resume</span>
+        </a>
+        <a href="https://github.com/Manasa-L-Hegde" target="_blank" class="contact-btn" id="contact-github">
+          <span class="contact-icon">🐙</span><span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed &amp; Built by <span class="gradient-text">Manasa L Hegde</span> · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
