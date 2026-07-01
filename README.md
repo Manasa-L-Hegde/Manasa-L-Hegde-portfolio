@@ -23,7 +23,7 @@
 
 ## 👋 About Me
 
-I'm **Manasa L Hegde**, a final-year **Information Science & Engineering** student at **Don Bosco Institute of Technology (DBIT)**, Bengaluru (VTU) with a **CGPA of 9.15**. I specialize in turning complex datasets into actionable insights and building intelligent AI-powered solutions.
+I'm **Manasa L Hegde**, a final-year **Information Science & Engineering** student at **Don Bosco Institute of Technology (DBIT)**, Bengaluru (VTU) with a **CGPA of 9.14**. I specialize in turning complex datasets into actionable insights and building intelligent AI-powered solutions.
 
 > 🏦 **Starting July 2026** — Joining **Commonwealth Bank of Australia (CBA)** as a **Software Development Trainee** (6-month paid internship)
 
@@ -78,6 +78,11 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 >
 > **Stack:** Streamlit · Groq AI · Plotly · SQL &nbsp; | &nbsp; [🔗 Live Demo](https://devflow-ai-se86qe7zzchyre8pvvgepd.streamlit.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/DevFlow-AI)
 
+### 🚦 Bengaluru Commute Decision Tool
+> AI-powered commute intelligence platform that combines historical traffic data, weather signals, and ML risk prediction to recommend the best departure time, route, and travel mode.
+>
+> **Stack:** Streamlit · scikit-learn · BigQuery · cuDF &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
+
 ### 💬 ReviewSense
 > ML project classifying restaurant reviews as positive/negative using TF-IDF vectorization and Multinomial Naive Bayes.
 >
@@ -104,6 +109,7 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 - 🏏 **IPL Data Analysis Dashboard** — Interactive Excel dashboard with pivot tables & slicers (2008–2022) &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/IPL-Data-Analysis-Dashboard-Excel)
 - 🎮 **Simon Says Game** — Memory-based game showcasing DOM manipulation & event handling &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/Simon-Says-Game)
 - 🎵 **Spotify Clone** — Pixel-perfect Spotify UI clone with advanced CSS &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/spotify-clone)
+- 🚦 **Bengaluru Commute Decision Tool** — Traffic-risk intelligence app that recommends optimal commute choices using historical traffic, weather, and ML predictions &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
 
 </details>
 
