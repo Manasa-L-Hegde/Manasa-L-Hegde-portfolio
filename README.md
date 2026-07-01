@@ -81,7 +81,7 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 ### 🚦 Bengaluru Commute Decision Tool
 > AI-powered commute intelligence platform that combines historical traffic data, weather signals, and ML risk prediction to recommend the best departure time, route, and travel mode.
 >
-> **Stack:** Streamlit · scikit-learn · BigQuery · cuDF &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
+> **Stack:** Streamlit · scikit-learn · BigQuery · cuDF &nbsp; | [🔗 Live Demo](https://bengaluru-commute-decision-toolgit-pgdgo73kcusbt4kwazwfdb.streamlit.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
 
 ### 💬 ReviewSense
 > ML project classifying restaurant reviews as positive/negative using TF-IDF vectorization and Multinomial Naive Bayes.
