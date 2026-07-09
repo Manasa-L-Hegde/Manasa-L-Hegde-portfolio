@@ -25,7 +25,7 @@
 
 I'm **Manasa L Hegde**, a final-year **Information Science & Engineering** student at **Don Bosco Institute of Technology (DBIT)**, Bengaluru (VTU) with a **CGPA of 9.14**. I specialize in turning complex datasets into actionable insights and building intelligent AI-powered solutions.
 
-> 🏦 **Starting July 2026** — Joining **Commonwealth Bank of Australia (CBA)** as a **Software Development Trainee** (6-month paid internship)
+> 🏦 **July 2026 — Present** — **Software Development Trainee Intern** at **Commonwealth Bank of Australia (CBA)** (6-month paid internship)
 
 ---
 
@@ -73,20 +73,30 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 >
 > **Stack:** React · Vite · Tailwind · Chart.js &nbsp; | &nbsp; [🔗 Live Demo](https://ecotrace-ai.vercel.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/AI-powered-Carbon-Footprint-Awareness-Platform)
 
-### ⚙️ DevFlow AI
-> AI-powered developer productivity assistant — generates SQL from natural language, debugs Python code, creates READMEs, and visualizes data.
+### 🛰️ AirGuard AI
+> Multimodal urban air quality intelligence system fusing citizen photos, ground sensors, and satellite remote sensing to detect unmonitored pollution hotspots and automate municipal response.
 >
-> **Stack:** Streamlit · Groq AI · Plotly · SQL &nbsp; | &nbsp; [🔗 Live Demo](https://devflow-ai-se86qe7zzchyre8pvvgepd.streamlit.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/DevFlow-AI)
+> **Stack:** Gradio · scikit-learn · Folium · OpenCV · Gemini API &nbsp; | &nbsp; [🔗 Live Demo](https://huggingface.co/spaces/manasahegde/airguard.ai) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/airguard-ai)
 
 ### 🚦 Bengaluru Commute Decision Tool
 > AI-powered commute intelligence platform that combines historical traffic data, weather signals, and ML risk prediction to recommend the best departure time, route, and travel mode.
 >
-> **Stack:** Streamlit · scikit-learn · BigQuery · cuDF &nbsp; | [🔗 Live Demo](https://bengaluru-commute-decision-toolgit-pgdgo73kcusbt4kwazwfdb.streamlit.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
+> **Stack:** Streamlit · scikit-learn · BigQuery · cuDF &nbsp; | &nbsp; [🔗 Live Demo](https://bengaluru-commute-decision-toolgit-pgdgo73kcusbt4kwazwfdb.streamlit.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
 
 ### 💬 ReviewSense
 > ML project classifying restaurant reviews as positive/negative using TF-IDF vectorization and Multinomial Naive Bayes.
 >
 > **Stack:** Python · TF-IDF · Naive Bayes &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/ReviewSense)
+
+### ⚙️ DevFlow AI
+> AI-powered developer productivity assistant — generates SQL from natural language, debugs Python code, creates READMEs, and visualizes data.
+>
+> **Stack:** Streamlit · Groq AI · Plotly · SQL &nbsp; | &nbsp; [🔗 Live Demo](https://devflow-ai-se86qe7zzchyre8pvvgepd.streamlit.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/DevFlow-AI)
+
+### ⚽ StadiumSense AI
+> GenAI operations command center and fan wayfinding platform built for the FIFA World Cup 2026. Optimizes stadium flow using DBSCAN clustering, ML forecasting, and NetworkX Dijkstra routing.
+>
+> **Stack:** Gradio · scikit-learn · NetworkX · Gemini AI &nbsp; | &nbsp; [🔗 Live Demo](https://huggingface.co/spaces/manasahegde/StadiumSense-AI) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/StadiumSense-AI)
 
 ### 🏙️ Urban Heat Island Mapping
 > Data-driven platform mapping urban heat islands at ward level for Bengaluru using satellite imagery and weather data.
@@ -109,7 +119,6 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 - 🏏 **IPL Data Analysis Dashboard** — Interactive Excel dashboard with pivot tables & slicers (2008–2022) &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/IPL-Data-Analysis-Dashboard-Excel)
 - 🎮 **Simon Says Game** — Memory-based game showcasing DOM manipulation & event handling &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/Simon-Says-Game)
 - 🎵 **Spotify Clone** — Pixel-perfect Spotify UI clone with advanced CSS &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/spotify-clone)
-- 🚦 **Bengaluru Commute Decision Tool** — Traffic-risk intelligence app that recommends optimal commute choices using historical traffic, weather, and ML predictions &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/bengaluru-commute-decision-tool)
 
 </details>
 
