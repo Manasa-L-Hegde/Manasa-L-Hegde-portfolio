@@ -25,7 +25,7 @@
 
 I'm **Manasa L Hegde**, a final-year **Information Science & Engineering** student at **Don Bosco Institute of Technology (DBIT)**, Bengaluru (VTU) with a **CGPA of 9.14**. I specialize in turning complex datasets into actionable insights and building intelligent AI-powered solutions.
 
-> 🏦 **July 2026 — Present** — **Software Development Trainee Intern** at **Commonwealth Bank of Australia (CBA)** (6-month paid internship)
+> 🏦 **July 2026 — Present** — **Software Developer Trainee Apprentice** at **Commonwealth Bank of Australia (CBA)** (via Teamlease Foundation, NAPS)
 
 ---
 
@@ -154,7 +154,7 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 | AI Fluency for Students | Skilljar | ✅ Completed |
 | Google Data Analytics Professional | Google (Coursera) | 🔄 Ongoing |
 | Microsoft PL-300 Power BI | Microsoft | 🔄 In Progress |
-| **Google Skills Boost** | Google Cloud | 💎 Diamond League (25K+ pts) |
+| **Google Skills Boost** | Google Cloud | 💎 Diamond League (30K+ pts) |
 
 </div>
 
