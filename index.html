@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -56,7 +57,7 @@
         <div class="stat-item"><div class="stat-num" data-count="12">0</div><div class="stat-label">Projects Built</div></div>
         <div class="stat-item"><div class="stat-num stat-decimal" data-count="9.14">0</div><div class="stat-label">CGPA</div></div>
         <div class="stat-item"><div class="stat-num" data-count="30">0</div><div class="stat-label">Google Skill K Pts</div></div>
-        <div class="stat-item"><div class="stat-num" data-count="3">0</div><div class="stat-label">Hackathons</div></div>
+        <div class="stat-item"><div class="stat-num" data-count="4">0</div><div class="stat-label">Hackathons</div></div>
       </div>
     </div>
     <div class="hero-image-wrap reveal" style="--delay:0.2s">
@@ -276,6 +277,34 @@
     <p class="section-eyebrow reveal">Compete & Build</p>
     <h2 class="section-title reveal">Hackathon <span class="gradient-text">Achievements</span></h2>
     <div class="hackathons-grid">
+      <!-- Hackathon 1 (PromptWars) -->
+      <div class="hackathon-card reveal" style="--delay:0.05s">
+        <div class="hackathon-rank-badge">
+          <span class="rank-number">347<sup>th</sup></span>
+          <span class="rank-label">Rank</span>
+        </div>
+        <div class="hackathon-content">
+          <div class="hackathon-meta">
+            <span class="hackathon-date">August 11, 2026</span>
+            <span class="hackathon-type">Build with AI</span>
+          </div>
+          <div class="hackathon-title">PromptWars Virtual — Challenge 3</div>
+          <div class="hackathon-organizer">Google for Developers x Hack2Skill (H2S)</div>
+          <p class="hackathon-desc">Ranked <strong class="text-lavender">347th</strong> out of <strong>10,000+ participants</strong> — secured <strong class="text-mint">Top 400 Leaderboard</strong> (Achievement tier) in the Google for Developers x Hack2Skill PromptWars Virtual Challenge 3.</p>
+          <div class="hackathon-stats-row">
+            <div class="hackathon-stat"><span class="hs-num">10,000+</span><span class="hs-label">Participants</span></div>
+            <div class="hackathon-stat"><span class="hs-num">347th</span><span class="hs-label">Rank</span></div>
+            <div class="hackathon-stat"><span class="hs-num">Top 400</span><span class="hs-label">Leaderboard</span></div>
+          </div>
+          <div class="hackathon-stack">
+            <span class="stack-pill">Prompt Engineering</span>
+            <span class="stack-pill">Generative AI</span>
+            <span class="stack-pill">Google Cloud</span>
+            <span class="stack-pill">Vertex AI</span>
+            <a href="https://certificate.hack2skill.com/claim/b26d1027086bbfeabb3593ad221640676e2161608f87fbefb19a7bf77126befc" target="_blank" rel="noopener" class="stack-pill" style="border-color: var(--lavender); color: var(--lavender); text-decoration: none;">View Certificate ↗</a>
+          </div>
+        </div>
+      </div>
       <!-- Hackathon 1 -->
       <div class="hackathon-card reveal" style="--delay:0.05s">
         <div class="hackathon-rank-badge">
@@ -359,6 +388,16 @@
     <p class="section-eyebrow reveal">Credentials</p>
     <h2 class="section-title reveal">Certifications & <span class="gradient-text">Achievements</span></h2>
     <div class="cert-grid">
+      <!-- PromptWars Virtual Challenge 3 -->
+      <div class="cert-card reveal" style="--delay:0.05s">
+        <div class="cert-badge">🏆</div>
+        <div class="cert-content">
+          <div class="cert-name">PromptWars Virtual Challenge 3 — Achievement (Top 400)</div>
+          <div class="cert-issuer">Google for Developers x Hack2Skill · Cert ID: 2026H2S06PWVCHL3-AT00261</div>
+          <div class="cert-desc">Issued Aug 11, 2026 · Ranked Top 400 out of 10,000+ participants · <a href="https://certificate.hack2skill.com/verify/2026H2S06PWVCHL3-AT00261" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:underline;">Verify Proof</a></div>
+        </div>
+        <a href="https://certificate.hack2skill.com/claim/b26d1027086bbfeabb3593ad221640676e2161608f87fbefb19a7bf77126befc" target="_blank" rel="noopener" class="cert-link" title="View Certificate">↗</a>
+      </div>
       <!-- 1 -->
       <div class="cert-card reveal" style="--delay:0.05s">
         <div class="cert-badge">☁️</div>
@@ -670,26 +709,79 @@
 <!-- CONTACT -->
 <section id="contact" class="section-dark">
   <div class="container">
-    <div class="contact-wrapper reveal">
+    <div class="contact-header reveal">
       <p class="section-eyebrow">Let's Connect</p>
       <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-      <p class="contact-subtitle">Open to collaborations and full-time Data Analyst / ML Engineer roles after June 2027. Feel free to reach out!</p>
-      <div class="contact-links">
-        <a href="mailto:manasalshegde@gmail.com" class="contact-btn" id="contact-email">
-          <span class="contact-icon">📧</span><span>manasalshegde@gmail.com</span>
-        </a>
-        <a href="tel:+918431363152" class="contact-btn" id="contact-phone">
-          <span class="contact-icon">📱</span><span>+91 84313 63152</span>
-        </a>
-        <a href="https://www.linkedin.com/in/manasa-l-hegde/" target="_blank" class="contact-btn" id="contact-linkedin">
-          <span class="contact-icon">💼</span><span>LinkedIn</span>
-        </a>
-        <a href="Manasa_L_Hegde_Resume.pdf" target="_blank" class="contact-btn" id="contact-resume">
-          <span class="contact-icon">📄</span><span>View Resume</span>
-        </a>
-        <a href="https://github.com/Manasa-L-Hegde" target="_blank" class="contact-btn" id="contact-github">
-          <span class="contact-icon">🐙</span><span>GitHub</span>
-        </a>
+    </div>
+    <div class="contact-grid reveal" style="--delay:0.1s">
+      <!-- Contact Info -->
+      <div class="contact-info-col">
+        <p class="contact-subtitle">Open to collaborations and full-time Data Analyst / ML Engineer / Software Development roles. Feel free to send a message or reach out directly!</p>
+        <div class="contact-links">
+          <a href="mailto:manasalshegde@gmail.com" class="contact-btn" id="contact-email">
+            <span class="contact-icon">📧</span><span>manasalshegde@gmail.com</span>
+          </a>
+          <a href="tel:+918431363152" class="contact-btn" id="contact-phone">
+            <span class="contact-icon">📱</span><span>+91 84313 63152</span>
+          </a>
+          <a href="https://www.linkedin.com/in/manasa-l-hegde/" target="_blank" rel="noopener" class="contact-btn" id="contact-linkedin">
+            <span class="contact-icon">💼</span><span>LinkedIn</span>
+          </a>
+          <a href="Manasa_L_Hegde_Resume.pdf" target="_blank" rel="noopener" class="contact-btn" id="contact-resume">
+            <span class="contact-icon">📄</span><span>View Resume</span>
+          </a>
+          <a href="https://github.com/Manasa-L-Hegde" target="_blank" rel="noopener" class="contact-btn" id="contact-github">
+            <span class="contact-icon">🐙</span><span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-col">
+        <form id="contact-form" class="contact-form" novalidate>
+          <!-- Honeypot field for spam protection -->
+          <div class="form-honeypot" aria-hidden="true" style="display:none !important;">
+            <label for="contact-honeypot">Leave this empty</label>
+            <input type="text" id="contact-honeypot" name="b_honeypot" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-name">Name <span class="required-star" aria-hidden="true">*</span></label>
+            <input type="text" id="contact-name" name="user_name" class="form-input" placeholder="Name" autocomplete="name" required aria-required="true" />
+            <span class="form-error" id="error-name" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email-input">Email <span class="required-star" aria-hidden="true">*</span></label>
+            <input type="email" id="contact-email-input" name="user_email" class="form-input" placeholder="yourname@gmail.com" autocomplete="email" required aria-required="true" />
+            <span class="form-error" id="error-email" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-reason">Reason for Reaching Out <span class="required-star" aria-hidden="true">*</span></label>
+            <select id="contact-reason" name="contact_reason" class="form-select" required aria-required="true">
+              <option value="" disabled selected>Select a reason...</option>
+              <option value="Job Opportunity">Job Opportunity</option>
+              <option value="Internship">Internship</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="form-error" id="error-reason" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message <span class="required-star" aria-hidden="true">*</span></label>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="How can I help you?" required aria-required="true"></textarea>
+            <span class="form-error" id="error-message" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" id="contact-submit" class="btn-primary form-submit-btn">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+
+          <div id="form-status" class="form-status" aria-live="polite" style="display: none;"></div>
+        </form>
       </div>
     </div>
   </div>

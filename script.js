@@ -2,6 +2,17 @@
    MANASA L HEGDE — PORTFOLIO SCRIPTS
    ══════════════════════════════════════════ */
 
+// ══════════════════════════════════════════
+// EMAILJS CONFIGURATION
+// Replace these placeholders with your actual EmailJS credentials:
+// - EMAILJS_SERVICE_ID: Found in EmailJS dashboard -> Email Services
+// - EMAILJS_TEMPLATE_ID: Found in EmailJS dashboard -> Email Templates
+// - EMAILJS_PUBLIC_KEY: Found in EmailJS dashboard -> Account Settings / API Keys
+// ══════════════════════════════════════════
+const EMAILJS_SERVICE_ID = 'service_frf1rkf';
+const EMAILJS_TEMPLATE_ID = 'template_vw1u4jn';
+const EMAILJS_PUBLIC_KEY = '8XEEvoSbgmfJd84Vs';
+
 // ── PARTICLE SYSTEM ──
 (function initParticles() {
   const canvas = document.getElementById('particles');
@@ -92,7 +103,7 @@
   }
   animateRing();
 
-  document.querySelectorAll('a, button, .project-card, .skill-card, .cert-card, .highlight-item, .hackathon-card').forEach(el => {
+  document.querySelectorAll('a, button, .project-card, .skill-card, .cert-card, .highlight-item, .hackathon-card, .form-input, .form-select, .form-textarea').forEach(el => {
     el.addEventListener('mouseenter', () => ring.classList.add('hover'));
     el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
   });
@@ -232,3 +243,136 @@ document.querySelectorAll('.project-card').forEach(card => {
     }
   });
 });
+
+// ── CONTACT FORM & EMAILJS INTEGRATION ──
+(function initContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+
+  // Initialize EmailJS if public key is provided
+  if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY && EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
+  const nameInput = document.getElementById('contact-name');
+  const emailInput = document.getElementById('contact-email-input');
+  const reasonInput = document.getElementById('contact-reason');
+  const messageInput = document.getElementById('contact-message');
+  const honeypotInput = document.getElementById('contact-honeypot');
+  const submitBtn = document.getElementById('contact-submit');
+  const statusDiv = document.getElementById('form-status');
+
+  const fields = [
+    { el: nameInput, errEl: document.getElementById('error-name'), validate: val => val.trim().length > 0 ? '' : 'Please enter your name.' },
+    { el: emailInput, errEl: document.getElementById('error-email'), validate: val => {
+        if (!val.trim()) return 'Please enter your email address.';
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(val.trim()) ? '' : 'Please enter a valid email address.';
+      }
+    },
+    { el: reasonInput, errEl: document.getElementById('error-reason'), validate: val => val ? '' : 'Please select a reason.' },
+    { el: messageInput, errEl: document.getElementById('error-message'), validate: val => val.trim().length > 0 ? '' : 'Please enter your message.' }
+  ];
+
+  // Clear errors on input / change
+  fields.forEach(field => {
+    if (!field.el) return;
+    const clearError = () => {
+      field.el.classList.remove('invalid');
+      if (field.errEl) {
+        field.errEl.textContent = '';
+        field.errEl.classList.remove('visible');
+      }
+    };
+    field.el.addEventListener('input', clearError);
+    if (field.el.tagName === 'SELECT') {
+      field.el.addEventListener('change', clearError);
+    }
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Honeypot check for spam bots
+    if (honeypotInput && honeypotInput.value !== '') {
+      showStatus('Message sent! Thank you for reaching out.', 'success');
+      form.reset();
+      return;
+    }
+
+    let isValid = true;
+    let firstInvalid = null;
+
+    fields.forEach(field => {
+      if (!field.el) return;
+      const errorMsg = field.validate(field.el.value);
+      if (errorMsg) {
+        isValid = false;
+        field.el.classList.add('invalid');
+        if (field.errEl) {
+          field.errEl.textContent = errorMsg;
+          field.errEl.classList.add('visible');
+        }
+        if (!firstInvalid) firstInvalid = field.el;
+      } else {
+        field.el.classList.remove('invalid');
+        if (field.errEl) {
+          field.errEl.textContent = '';
+          field.errEl.classList.remove('visible');
+        }
+      }
+    });
+
+    if (!isValid) {
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+
+    // Submit state
+    submitBtn.disabled = true;
+    const origBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span>Sending...</span>';
+    statusDiv.style.display = 'none';
+
+    // Check if EmailJS credentials are set
+    const isPlaceholder = (EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID' || EMAILJS_TEMPLATE_ID === 'YOUR_TEMPLATE_ID' || EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY');
+
+    if (isPlaceholder || typeof emailjs === 'undefined') {
+      // Demonstration / Fallback mode when user hasn't added real keys yet
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = origBtnText;
+        showStatus('Message sent! Thank you for reaching out.', 'success');
+        form.reset();
+      }, 700);
+    } else {
+      // Live EmailJS submission
+      const templateParams = {
+        from_name: nameInput.value.trim(),
+        from_email: emailInput.value.trim(),
+        reason: reasonInput.value,
+        message: messageInput.value.trim()
+      };
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = origBtnText;
+          showStatus('Message sent! Thank you for reaching out.', 'success');
+          form.reset();
+        })
+        .catch(err => {
+          console.error('EmailJS error:', err);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = origBtnText;
+          showStatus('Failed to send message. Please try again or email directly at manasalshegde@gmail.com.', 'error');
+        });
+    }
+  });
+
+  function showStatus(msg, type) {
+    statusDiv.textContent = msg;
+    statusDiv.className = `form-status ${type}`;
+    statusDiv.style.display = 'block';
+  }
+})();
