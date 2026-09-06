@@ -186,6 +186,7 @@ function closeMobile() {
         const el = entry.target;
         const target = parseFloat(el.dataset.count);
         const isDecimal = el.classList.contains('stat-decimal');
+        const suffix = el.dataset.suffix || (isDecimal ? '' : '+');
         const duration = 1800;
         const start = performance.now();
 
@@ -193,9 +194,9 @@ function closeMobile() {
           const progress = Math.min((now - start) / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           const value = eased * target;
-          el.textContent = isDecimal ? value.toFixed(2) : Math.floor(value);
+          el.textContent = (isDecimal ? value.toFixed(2) : Math.floor(value)) + suffix;
           if (progress < 1) requestAnimationFrame(update);
-          else el.textContent = isDecimal ? target.toFixed(2) : target;
+          else el.textContent = (isDecimal ? target.toFixed(2) : target) + suffix;
         }
         requestAnimationFrame(update);
         observer.unobserve(el);

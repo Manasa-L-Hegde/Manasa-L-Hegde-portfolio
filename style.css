@@ -38,6 +38,10 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
 ::selection { background: rgba(192,132,252,0.3); color: #fff; }
@@ -563,7 +567,12 @@ section { padding: 6rem 6%; position: relative; z-index: 1; }
   margin-bottom: 1.4rem;
 }
 
-.project-footer { display: flex; align-items: center; justify-content: space-between; }
+.project-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
 .project-stack { display: flex; gap: 0.35rem; flex-wrap: wrap; }
 .stack-pill {
@@ -1440,6 +1449,9 @@ footer {
   .contact-links { flex-direction: column; width: 100%; }
   .contact-btn { width: 100%; justify-content: flex-start; }
   .contact-form-col { padding: 1.4rem 1.1rem; }
+
+  .project-footer { align-items: flex-start; flex-direction: column; }
+  .project-links { width: 100%; justify-content: flex-end; }
 
   .hero-stats {
     display: grid;
