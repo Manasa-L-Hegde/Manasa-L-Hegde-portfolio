@@ -55,11 +55,11 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 
 | Category | Technologies |
 |----------|-------------|
-| **Languages** | Python · SQL · Java · JavaScript |
+| **Languages** | Python · SQL · Java · JavaScript · TypeScript |
 | **Data & Viz** | Excel · Power BI · Tableau · Plotly · Streamlit |
-| **ML & AI** | Scikit-learn · Pandas · NumPy · Groq API · LLMs |
+| **ML & AI** | Scikit-learn · Pandas · NumPy · Google Gemini · Groq API · LLMs |
 | **Cloud** | Google Cloud · AWS · Vertex AI |
-| **Web** | HTML5 · CSS3 · JavaScript (ES6+) |
+| **Web** | Next.js · HTML5 · CSS3 · Tailwind CSS · JavaScript (ES6+) |
 | **Tools** | Git · GitHub · Jupyter · VS Code |
 
 </div>
@@ -67,6 +67,11 @@ This is my personal portfolio website — a fully responsive, animated, and mode
 ---
 
 ## 🚀 Featured Projects
+
+### ⚖️ Nyaya Sahayak (न्याय सहायक)
+> Context-aware Indian AI legal assistant powered by Google Gemini multimodal vision. Features automated notice & document fact extraction, urgent safety & cyber fraud triage (112/181/1930), bilingual legal guidance, and court-ready PDF brief export.
+>
+> **Stack:** Next.js 14 · TypeScript · Tailwind · Google Gemini · Framer Motion &nbsp; | &nbsp; [🔗 Live Demo](https://nyaya-sahayak-eight.vercel.app/) &nbsp; | &nbsp; [📂 Repo](https://github.com/Manasa-L-Hegde/Nyaya_Sahayak)
 
 ### 🌱 Carbon Footprint Platform
 > AI-powered platform that calculates carbon emissions, generates carbon scores, and provides personalized sustainability recommendations.
